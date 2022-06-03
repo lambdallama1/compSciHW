@@ -1,0 +1,18 @@
+Simpson's Rule was used because of its simplicity. 
+
+To deal with the removable singularity at x = 0, a limit will be taken. 
+By direct substitution, we get an indeterminate form of type 0/0. Using
+L'Hopital's rule, this becomes lim x->0 (3x^2/e^x) = 3 * 0 / 1 = 0. So
+the funcion will be defined to have f(0) = 0. 
+
+For the infinite bound, rather than substitution, we'll just ask python
+for what value of x = n, x^3 / (e^x - 1) is indistinguishable from 0. 
+
+On the machine this txt is being written, we get x = 709. At first, I thought
+this was because 710^3/e^710 ~ 10 ^ -300, which is about the limit of a 64-bit machine. 
+However, python3 throws a fit when I try this value
+because evaluating exp(710) ~ 10 ^ 308, so the function throws a warning since 
+this really is the largest float that can be evaluated with 64 bits. 
+
+In any case, this was the reasoning to stop the integral at x = 709 since
+exp would'nt be able to take anything larger anyway. 

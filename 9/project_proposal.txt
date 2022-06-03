@@ -1,0 +1,5 @@
+Box Dimension of Fractals
+
+	I would like to come up for a program to determine the box dimension, or possibly even the Hausdorff dimension, of various physical objects. In particular, I would consider this project a success if I am able to create a program capable of performing the task fractals were created for ie measuring coastlines. 
+	If done naively, the coastline of an island can be calculated to be infinite. The inherent roughness is continuous at every scale. To get a meaningful answer out, the idea of a box dimension was created, where we see how the length of our line scales with the scaling of our ruler. 
+	Ideally, this program will be able to measure any, non-landlocked, nations coastline. Although, to get started I will probably start with purely mathematical objects such as the Sierpinski Triangle. 	Further, it could be interesting to try and find the box dimension of other objects such as the human brain. Of course, it may prove challenging to move up from lines to surfaces. 
